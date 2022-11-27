@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expenses",
+  "info": {
+    "singularName": "expense",
+    "pluralName": "expenses",
+    "displayName": "Expense",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ExpenseTitle": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "January": {
+      "type": "integer",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "expenses"
+    },
+    "March": {
+      "type": "integer",
+      "min": 0
+    },
+    "April": {
+      "type": "integer",
+      "min": 0
+    },
+    "May": {
+      "type": "integer",
+      "min": 0
+    },
+    "June": {
+      "type": "integer",
+      "min": 0
+    },
+    "July": {
+      "type": "integer",
+      "min": 0
+    },
+    "August": {
+      "type": "integer",
+      "min": 0
+    },
+    "September": {
+      "type": "integer",
+      "min": 0
+    },
+    "October": {
+      "type": "integer",
+      "min": 0
+    },
+    "November": {
+      "type": "integer",
+      "min": 0
+    },
+    "December": {
+      "type": "integer",
+      "min": 0
+    },
+    "ExpenseType": {
+      "type": "enumeration",
+      "enum": [
+        "Income",
+        "Expense"
+      ],
+      "default": "Expense",
+      "required": true
+    },
+    "February": {
+      "type": "integer",
+      "min": 0
+    },
+    "Category": {
+      "type": "string"
+    }
+  }
+}
